@@ -1,0 +1,34 @@
+<html>
+<head>
+<link rel  ="stylesheet" href="style.css">
+<script src="jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+jQuery(function($){
+    var $navbar = $('.header-whole');
+    $(window).scroll(function(event) {
+    var $current = $(this).scrollTop();
+         if( $current > 0 ){
+              $navbar.addClass('navbar-color');
+         } else {
+              $navbar.removeClass('navbar-color');
+         }
+    });
+ });
+
+</script>
+</head>
+<body>
+	<div class="black">
+  <ul>
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+    <li>link</li>
+  </ul>
+</div>
+<p> hi</p>
+<p>hello</p>
+
+</body>
+</html>
